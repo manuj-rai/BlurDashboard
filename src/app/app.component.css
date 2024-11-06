@@ -1,0 +1,12 @@
+.dashboard-layout {
+  display: flex;
+  height: 93vh;
+}
+
+.content {
+    display: flex;
+  flex: 1;
+  overflow-y: auto;
+  background: transparent;
+  color: #fff;
+}

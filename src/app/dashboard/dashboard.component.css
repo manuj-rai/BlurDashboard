@@ -1,0 +1,23 @@
+.dashboard-content{
+    background: transparent;
+    backdrop-filter: blur(15px);
+    padding-bottom: 45px;
+    z-index: 1;
+}
+
+.widgets {
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    padding: 20px;
+    font: 500 1.25rem / 1.75rem Roboto, sans-serif;
+    letter-spacing: 0;
+    margin: 0 0 .5em
+}
+.widget .material-icons {
+  font-size: 64px;
+  margin-right: 8px;
+  color: #555;
+}
