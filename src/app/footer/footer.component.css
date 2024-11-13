@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
   width: 100%;
   padding: 0.5rem;
@@ -27,3 +28,34 @@
 .footer-links a:hover {
   text-decoration: underline;
 }
+=======
+.footer {
+  width: 98.5%;
+  padding: 0.5rem;
+  background-color: rgb(0 0 0 / 80%);
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+>>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1

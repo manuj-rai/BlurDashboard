@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .dashboard-layout {
   width:100%;
   display: flex;
@@ -8,3 +9,17 @@
   color: #fff;
 }
 
+=======
+.dashboard-layout {
+  display: flex;
+  height: 93vh;
+}
+
+.content {
+    display: flex;
+  flex: 1;
+  overflow-y: auto;
+  background: transparent;
+  color: #fff;
+}
+>>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1

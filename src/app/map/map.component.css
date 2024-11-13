@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .grid {
   --radius: 38px;
@@ -656,3 +657,21 @@ footer span:hover::before {
     transform: translateY(calc(-100% * calc(var(--num) + 1)));
   }
 }
+=======
+.map-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin:10px;
+  width: 44.5%;
+}
+img {
+    width: 100%;
+    filter: invert(1);
+    border-radius: 8px;
+}
+>>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1

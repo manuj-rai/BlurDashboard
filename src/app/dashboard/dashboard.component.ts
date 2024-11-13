@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Inquiry } from '../inquiry.model';
@@ -66,3 +67,19 @@ export class DashboardComponent implements OnInit {
 }
 
 
+=======
+import { Component } from '@angular/core';
+import { WidgetComponent } from '../widget/widget.component';
+import { ChartComponent } from '../chart/chart.component';
+import { MapComponent } from '../map/map.component';
+
+@Component({
+  selector: 'app-dashboard',
+  standalone: true,
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css'],
+  imports: [WidgetComponent, ChartComponent, MapComponent]
+})
+export class DashboardComponent { }
+
+>>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1

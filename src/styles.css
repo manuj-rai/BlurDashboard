@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body {
   overflow: hidden; /* Disables scrolling */
   height: 100%; /* Ensures full height is taken up */
@@ -26,3 +27,28 @@ body {
   background-color: rgb(0 0 0/60%);     
 }
 
+=======
+body {
+    margin: 0;
+    background: url(assets/IMG_0270.jpeg) no-repeat;
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter:blur(20px);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 12px;               
+  background-color: #171d28;  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #20293b;        
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(0 0 0/60%);     
+}
+
+>>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -30,3 +31,31 @@ import { TodoComponent } from './todo/todo.component';
 })
 export class AppModule { }
 
+=======
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { AppComponent } from './app.component';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    SidebarComponent,
+    FooterComponent
+  ],
+  imports: [
+    BrowserModule,
+    CommonModule 
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+>>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1

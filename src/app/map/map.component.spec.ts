@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MapComponent } from './map.component';
@@ -21,3 +22,28 @@ describe('MapComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+=======
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { MapComponent } from './map.component';
+
+describe('MapComponent', () => {
+  let component: MapComponent;
+  let fixture: ComponentFixture<MapComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [MapComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(MapComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+>>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1
