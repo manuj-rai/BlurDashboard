@@ -1,0 +1,51 @@
+<div class="dashboard-container">
+  <h3>DASHBOARD</h3>
+  <div class="widgets">
+    <app-widget title="New Visits: " value="57,820" icon="person"></app-widget>
+    <app-widget title="Purchases: " value="$89,745" icon="attach_money"></app-widget>
+    <app-widget title="Active Users: " value="178,391" icon="sentiment_satisfied_alt"></app-widget>
+    <app-widget title="Returned: " value="32,592" icon="undo"></app-widget>
+  </div>
+
+  <div *ngIf="!inquiries || inquiries.length === 0" class="no-data">
+    <p>No inquiries available.</p>
+  </div>
+<div class="dashboard-content">
+  <div *ngIf="inquiries && inquiries.length > 0" class="inquiries-table">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Message</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let inquiry of paginatedInquiries">
+          <td>{{ inquiry.id }}</td>
+          <td>{{ inquiry.name }}</td>
+          <td>{{ inquiry.email }}</td>
+          <td>{{ inquiry.message }}</td>
+          <td>{{ inquiry.date | date: 'short' }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Pagination Controls -->
+    <div class="pagination-controls">
+      <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+      <span>Page {{ currentPage }} of {{ totalPages }}</span>
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+    </div>
+  </div>
+  <app-todo></app-todo>
+</div>
+</div>
+
+  <!--<app-chart></app-chart>
+  <app-map></app-map>-->
+
+
+

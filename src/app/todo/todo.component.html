@@ -1,0 +1,17 @@
+<div class="todo-container">
+  <h3>Todo List</h3>
+  <div>
+      <div class="search-container">
+        <input class="search" [(ngModel)]="newTodo" placeholder="Add a new task" />
+        <button (click)="addTodo()">Add Task</button>
+    </div>
+    </div>
+  <ul>
+    <li *ngFor="let item of todoItems; let i = index">
+      <input type="checkbox" [(ngModel)]="item.done" (change)="toggleTodoStatus(i)">
+      <span [class.completed]="item.done">{{ item.task }}</span>
+    </li>
+  </ul>
+</div>
+
+
