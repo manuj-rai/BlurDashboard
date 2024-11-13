@@ -1,0 +1,30 @@
+[33mcommit 7bd188553374faf95fd83cded6f8e76b25083d26[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 4ade46a 9ed2406
+Author: Manuj Rai <imanujrai7@gmail.com>
+Date:   Wed Nov 13 15:11:59 2024 +0530
+
+    Resolved merge conflicts
+
+[33mcommit 4ade46a4dd62f44e6580b58e63ec7151c82f6083[m
+Author: Manuj Rai <imanujrai7@gmail.com>
+Date:   Wed Nov 13 15:03:10 2024 +0530
+
+    Reinitialized Git repository and added Angular dashboard
+
+[33mcommit 9ed240678e279fddec5fe3b25db25c6590c220f1[m
+Author: Manuj Rai <imanujrai7@gmail.com>
+Date:   Wed Nov 6 11:00:58 2024 +0530
+
+    Add files via upload
+
+[33mcommit e71843ab4cc62295b48419f3f4af6275c59325f9[m
+Author: Manuj Rai <imanujrai7@gmail.com>
+Date:   Wed Nov 6 10:59:34 2024 +0530
+
+    Add files via upload
+
+[33mcommit c0561a11376722850c45b2e306e26b0c8209dde0[m
+Author: Manuj Rai <imanujrai7@gmail.com>
+Date:   Mon Oct 28 10:21:28 2024 +0530
+
+    initial commit

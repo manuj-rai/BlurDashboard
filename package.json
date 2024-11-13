@@ -24,11 +24,9 @@
     "@angular/router": "^18.2.0",
     "@angular/ssr": "^18.2.8",
     "@fortawesome/fontawesome-free": "^6.6.0",
-<<<<<<< HEAD
+
     "chart.js": "^4.4.6",
-=======
-    "chart.js": "^4.4.5",
->>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1
+
     "express": "^4.18.2",
     "ng2-charts": "^6.0.1",
     "rxjs": "~7.8.0",
@@ -50,8 +48,6 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
   }
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 9ed240678e279fddec5fe3b25db25c6590c220f1
+
