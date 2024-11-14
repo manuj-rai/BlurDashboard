@@ -41,8 +41,18 @@
   border-color: #007bff;
 }
 
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 30px red;
+  }
+  50% {
+    box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 60px red;
+  }
+}
+
 .search-container input.empty-input {
-  border: 2px solid red;
+  border: 1px solid red;
+  animation: glowPulse 1.5s infinite alternate; /* Pulsing glow effect */
 }
 
 

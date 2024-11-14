@@ -7,6 +7,10 @@
     margin: 10px 10px 10px 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
+
+  .search-container{
+    margin-bottom: 30px;
+  }
   
   input {
     background-color: rgb(35 35 35 / 60%);
@@ -19,6 +23,27 @@
     width: 150px;
   }
   
+  @keyframes glowPulse {
+    0%, 100% {
+      box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    }
+    50% {
+      box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 60px red;
+    }
+  }
+  
+  .search-container input.empty-input {
+    border: 1px solid red;
+    animation: glowPulse 1.5s infinite alternate; /* Pulsing glow effect */
+  }
+  
+  
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+
   button {
     padding: 10px 16px;
     background-color: rgb(35 35 35 / 60%);
