@@ -15,7 +15,9 @@ export class TodoComponent {
   isInputEmpty: boolean = false;  // Track if the input is empty
 
   constructor() {
-    this.loadTodos();
+    if (this.isBrowser()) {
+      this.loadTodos(); // Load todos from local storage on component initialization
+    }
   }
 
   toggleTodoStatus(index: number) {
@@ -53,6 +55,10 @@ export class TodoComponent {
   removeTodo(index: number) {
     this.todoItems.splice(index, 1);
     this.saveTodos();
+  }
+
+  private isBrowser(): boolean {
+    return typeof window !== 'undefined' && typeof localStorage !== 'undefined';
   }
 }
 
