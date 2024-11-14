@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Inquiry } from '../inquiry.model';
 import { WidgetComponent } from '../widget/widget.component';
-import { ChartComponent } from '../chart/chart.component';
-import { MapComponent } from '../map/map.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http'; 
 import { TodoComponent } from '../todo/todo.component';
@@ -15,7 +13,7 @@ import { WeatherComponent } from '../weather/weather.component';
   standalone: true,
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
-  imports: [WidgetComponent, ChartComponent, MapComponent, CommonModule, HttpClientModule, TodoComponent, WeatherComponent]
+  imports: [WidgetComponent,  CommonModule, HttpClientModule, TodoComponent, WeatherComponent]
 })
 export class DashboardComponent implements OnInit {
   inquiries: Inquiry[] = [];  // Declare inquiries as an array of Inquiry objects

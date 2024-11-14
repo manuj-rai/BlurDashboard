@@ -17,12 +17,7 @@ import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
-    DashboardComponent,
-    AppComponent,
-    NavbarComponent,
-    SidebarComponent,
-    FooterComponent,
-    TodoComponent
+
   ],
   imports: [
     BrowserModule,
@@ -30,10 +25,17 @@ import { WeatherComponent } from './weather/weather.component';
     HttpClientModule,
     AppRoutingModule ,
     WeatherComponent,
+    DashboardComponent,
+    AppComponent,
+    NavbarComponent,
+    SidebarComponent,
+    FooterComponent,
+    TodoComponent,
+    RouterOutlet,
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
 

@@ -3,10 +3,6 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { ChartComponent } from './chart/chart.component';
-import { MapComponent } from './map/map.component';
-import { WidgetComponent } from './widget/widget.component';
 import { FooterComponent } from './footer/footer.component';
 
 
@@ -16,10 +12,6 @@ import { FooterComponent } from './footer/footer.component';
   imports: [RouterOutlet, 
     NavbarComponent,
     SidebarComponent,
-    DashboardComponent,
-    ChartComponent,
-    MapComponent,
-    WidgetComponent,
     FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
