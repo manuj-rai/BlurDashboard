@@ -13,6 +13,8 @@ import { TodoComponent } from './todo/todo.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { WeatherComponent } from './weather/weather.component';
+import { WidgetComponent } from './widget/widget.component';
+
 
 
 @NgModule({
@@ -31,6 +33,7 @@ import { WeatherComponent } from './weather/weather.component';
     SidebarComponent,
     FooterComponent,
     TodoComponent,
+    WidgetComponent,
     RouterOutlet,
     FormsModule
   ],

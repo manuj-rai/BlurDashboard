@@ -12,30 +12,32 @@ import { FormsModule } from '@angular/forms';
 export class TodoComponent {
   todoItems: { task: string, done: boolean }[] = [];
   newTodo: string = '';
+  isInputEmpty: boolean = false;  // Track if the input is empty
 
   constructor() {
-    this.loadTodos();  // Load todos from local storage on component initialization
+    this.loadTodos();
   }
 
   toggleTodoStatus(index: number) {
     this.todoItems[index].done = !this.todoItems[index].done;
-    this.saveTodos();  // Save updated todos to local storage
+    this.saveTodos();
   }
 
   addTodo() {
     if (this.newTodo.trim()) {
       this.todoItems.push({ task: this.newTodo, done: false });
-      this.newTodo = '';  // Clear input after adding
-      this.saveTodos();   // Save new list to local storage
+      this.newTodo = '';
+      this.isInputEmpty = false; // Reset empty check
+      this.saveTodos();
+    } else {
+      this.isInputEmpty = true;  // Set flag to true if input is empty
     }
   }
 
-  // Method to store the todoItems in local storage
   saveTodos() {
     localStorage.setItem('todoItems', JSON.stringify(this.todoItems));
   }
 
-  // Method to load the todoItems from local storage
   loadTodos() {
     const savedTodos = localStorage.getItem('todoItems');
     if (savedTodos) {
@@ -43,18 +45,17 @@ export class TodoComponent {
     }
   }
 
-  // Detects Enter key press and triggers addTodo if input is focused
   @HostListener('document:keydown.enter')
   onEnter() {
     this.addTodo();
   }
 
-    // Method to remove a todo item
-    removeTodo(index: number) {
-      this.todoItems.splice(index, 1); // Remove the todo item at the specified index
-      this.saveTodos();  // Save the updated list to local storage
-    }
+  removeTodo(index: number) {
+    this.todoItems.splice(index, 1);
+    this.saveTodos();
+  }
 }
+
 
 
 

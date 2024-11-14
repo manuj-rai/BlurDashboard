@@ -1,20 +1,24 @@
 <div class="todo-container">
   <h3>Todo List</h3>
-  <div>
-    <div class="search-container">
-      <input class="search" [(ngModel)]="newTodo" placeholder="Add a new task" />
-      <button (click)="addTodo()">Add Task</button>
-    </div>
+  <div class="search-container">
+    <!-- Add conditional class for red border if input is empty -->
+    <input 
+      class="search" 
+      [(ngModel)]="newTodo" 
+      placeholder="Add a new task"
+      [ngClass]="{ 'empty-input': isInputEmpty }" 
+      (input)="isInputEmpty = false" /> <!-- Reset isInputEmpty on input -->
+    <button (click)="addTodo()">Add Task</button>
   </div>
   <ul>
     <li *ngFor="let item of todoItems; let i = index">
       <input type="checkbox" [(ngModel)]="item.done" (change)="toggleTodoStatus(i)">
       <span [class.completed]="item.done">{{ item.task }}</span>
-      <!-- Remove Button -->
-      <button (click)="removeTodo(i)" class="remove-btn">Remove</button>
+      <button (click)="removeTodo(i)">Remove</button> <!-- Add remove button -->
     </li>
   </ul>
 </div>
+
 
 
 
