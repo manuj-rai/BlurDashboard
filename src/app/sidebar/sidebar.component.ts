@@ -1,4 +1,3 @@
-
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { CommonModule } from "@angular/common";
@@ -32,11 +31,15 @@ export class SidebarComponent implements OnInit {
 
   setActiveMenu(menu: string) {
     this.activeMenu = menu.toLowerCase(); // Ensure menu names are lowercase for consistency
+
+    // Navigate to the selected menu route
     if (menu === 'dashboard') {
       this.router.navigate(['/dashboard']);
     } else if (menu === 'components') {
       this.router.navigate(['/components']);
     } else if (menu === 'charts') {
+      // Update active menu immediately before navigation
+      this.activeMenu = 'charts';
       this.router.navigate(['/charts']);
     } else if (menu === 'features') {
       this.router.navigate(['/features']);
@@ -51,4 +54,5 @@ export class SidebarComponent implements OnInit {
     }
   }
 }
+
 
