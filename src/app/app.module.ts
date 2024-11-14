@@ -10,6 +10,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TodoComponent } from './todo/todo.component';
+import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { WeatherComponent } from './weather/weather.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { TodoComponent } from './todo/todo.component';
   imports: [
     BrowserModule,
     CommonModule,
-    HttpClientModule 
+    HttpClientModule,
+    AppRoutingModule ,
+    WeatherComponent,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

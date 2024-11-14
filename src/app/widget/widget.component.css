@@ -17,3 +17,10 @@
   margin-right: 8px;
   color: #555;
 }
+
+@media (max-width: 768px) {
+  .widget-card{
+    width: 300px !important;
+  }
+  
+}
