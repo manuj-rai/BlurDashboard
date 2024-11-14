@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class WeatherComponent implements OnInit {
   weatherData: any;
-  city: string = 'Pune';  // Default city
+  city: string = 'Ahmedabad';  // Default city
   apiKey: string = 'ebe4977f055defcccc75873566e531c1';  // Replace with your OpenWeatherMap API key
   apiUrl: string = 'https://api.openweathermap.org/data/2.5/weather';
 
