@@ -47,11 +47,6 @@ export class TodoComponent {
     }
   }
 
-  @HostListener('document:keydown.enter')
-  onEnter() {
-    this.addTodo();
-  }
-
   removeTodo(index: number) {
     this.todoItems.splice(index, 1);
     this.saveTodos();

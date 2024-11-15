@@ -19,6 +19,7 @@ h3{
   padding: 10px 0px 0px 10px;
   font: 500 1.25rem / 1.75rem Roboto, sans-serif;
   letter-spacing: 0;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 5);;
 }
 
 .widget .material-icons {
@@ -54,7 +55,7 @@ h3{
   border-radius: 16px 16px 0px 0px;
   overflow: hidden;
   background-color: rgb(0 0 0 / 80%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 5);
 }
 
 .inquiries-table th, .inquiries-table td {
@@ -89,7 +90,7 @@ h3{
   background: rgb(0 0 0 / 80%);
   border-radius: 0px 0px 16px 16px;
   border-bottom: 1px solid rgb(255 255 255 / 16%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
 }
 
 .pagination-controls button {
@@ -121,6 +122,8 @@ h3{
 .inquiry-todo{
   display: flex;
 }
+
+
 
 /* Flex Layout for side-by-side display of Table and Todo List */
 .dashboard-content {

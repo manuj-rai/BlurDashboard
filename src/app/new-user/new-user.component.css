@@ -1,0 +1,48 @@
+.new-users{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0 0 0 / 80%);
+    padding: 10px;
+    margin-top: -178px;
+    position: fixed;
+    border-radius: 16px;
+    font-size: 10px;
+    width: 718px;
+    margin-left: 10px;
+    height: 149px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
+}
+
+h2 {
+    font: 400 1.112rem / 3.25rem Roboto, sans-serif;
+    letter-spacing: 0;
+    margin: -13px 0 -0.5em;
+}
+
+.new-users .user-list{
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.new-users .user-list:hover{
+    box-shadow: none;
+}
+
+.new-users .user-list .user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-users .user-list .user img{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}

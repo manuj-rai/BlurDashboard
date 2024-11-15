@@ -5,7 +5,7 @@
     border-radius: 16px;
     width: 300px;
     margin: 10px 10px 10px 0px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
   }
 
   .search-container{
@@ -25,15 +25,15 @@
   
   @keyframes glowPulse {
     0%, 100% {
-      box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 30px red;
+      box-shadow: 0 0 1px red, 0 0 4px red, 0 0 6px red, 0 0 8px red;
     }
     50% {
-      box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 60px red;
+      box-shadow: 0 0 2px red, 0 0 6px red, 0 0 8px red, 0 0 10px red;
     }
   }
   
   .search-container input.empty-input {
-    border: 1px solid red;
+
     animation: glowPulse 1.5s infinite alternate; /* Pulsing glow effect */
   }
   

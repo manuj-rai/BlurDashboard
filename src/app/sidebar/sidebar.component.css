@@ -29,11 +29,13 @@
 
 .sidebar li:hover {
   background-color: #575757; 
+  box-shadow: 0 0 15px #575757; 
 }
 
 .sidebar li.active {
   background-color: #555; 
-  color: white;  
+  color: white; 
+  box-shadow: 0 0 15px #575757;  
 }
 
 
