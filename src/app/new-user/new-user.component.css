@@ -3,14 +3,15 @@
     flex-direction: column;
     background-color: rgb(0 0 0 / 80%);
     padding: 10px;
-    margin-top: -178px;
-    position: fixed;
+    margin-top: -300px;
+    /* position: fixed; */
     border-radius: 16px;
     font-size: 10px;
-    width: 718px;
+    width: 97%;
     margin-left: 10px;
-    height: 149px;
+    /* height: 149px; */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
+    border: 1px solid rgb(255 255 255 / 16%);
 }
 
 h2 {

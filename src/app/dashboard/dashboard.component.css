@@ -7,6 +7,18 @@
   border-radius: 8px;
 }
 
+/* Flex Layout for side-by-side display of Table and Todo List */
+.dashboard-content {
+  gap: 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
 .widgets {
   display: flex;
   align-items: center;
@@ -44,7 +56,7 @@ h3{
 
 /* Table styles */
 .inquiries-table {
-    width:70%;
+    width: 100%;
     padding: 10px;
     font-size: 16px;  
 }
@@ -78,7 +90,7 @@ h3{
 }
 
 .inquiries-table td {
-  font-size: 1em;
+  font-size: 14px;
   color: #fff;
 }
 
@@ -124,97 +136,66 @@ h3{
 }
 
 
-
-/* Flex Layout for side-by-side display of Table and Todo List */
-.dashboard-content {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-/* Mobile responsiveness */
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
 
-  /* Widgets layout */
-  .widgets {
-    align-items: center;
-    display: flex;
-    justify-content: left;
-    padding: 10px;
-    padding-bottom: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-  }
   .dashboard-content {
-    display: flex;
-    justify-content: space-between;
+    width: 100vh;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto; 
+    height: auto; 
+    gap: 20px; 
   }
 
-  .inquiries-table{
-    width: 41%;
-    font-size: 10px;;
-  }
-
-  /* Table style for smaller screens */
-  .inquiries-table table {
+  .inquiries-table,
+  .todo-container {
     width: 100%;
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+    margin-top: 10px;
   }
 
-  /* Adjust padding for table cells */
-  .inquiries-table th,
-  .inquiries-table td {
-    padding: 10px;
-    font-size: 0.9em;
+  .inquiries-table table {
+    font-size: 12px;
   }
 
-  .inquiries-table td {
-    word-wrap: break-word;
+  .inquiries-table th, .inquiries-table td {
+    padding: 8px;
   }
 
-  /* Pagination controls for mobile */
   .pagination-controls {
-    align-items: center;
-    padding: 0;
+    flex-direction: column;
+    padding: 5px 0;
   }
 
   .pagination-controls button {
-    width: auto;
-    padding: 8px 20px;
-    margin: 5px;
+    width: 80%; 
+    margin: 5px 0; 
   }
 
-  /* Modify heading style for small screens */
+
+  .widgets {
+    flex-direction: column;
+    align-items: stretch; 
+    gap: 10px; 
+  }
+
+  .widget .material-icons {
+    font-size: 48px;
+  }
+
+
   h3 {
-    font-size: 1.1rem;
+    text-align: center;
+    font-size: 1rem; 
+  }
+
+  .inquiry-todo {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
   }
 
   .no-data {
-    font-size: 1.1em;
-  }
-}
-
-@media (max-width: 480px) {
-
-  /* Widgets */
-  .widgets {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .widget {
-    margin-bottom: 15px;
-  }
-
-  .pagination-controls button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .pagination-controls span {
-    font-size: 14px;
+    padding: 15px;
+    font-size: 1em;
   }
 }

@@ -38,8 +38,6 @@ export class SidebarComponent implements OnInit {
     } else if (menu === 'components') {
       this.router.navigate(['/components']);
     } else if (menu === 'charts') {
-      // Update active menu immediately before navigation
-      this.activeMenu = 'charts';
       this.router.navigate(['/charts']);
     } else if (menu === 'features') {
       this.router.navigate(['/features']);
