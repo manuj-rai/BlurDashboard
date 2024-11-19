@@ -4,6 +4,7 @@
   width: 100%;
   border: 1px solid var(--jet);
   overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .mapbox figure { 
@@ -48,8 +49,8 @@
   width: 40px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
   overflow: hidden;
-  top: 15px;
-  right: 40px;
+  top: 0px;
+  right: 0px;
   filter: grayscale(1) invert(1);
 }
 
