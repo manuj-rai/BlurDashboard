@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { WeatherComponent } from './weather/weather.component';
 import { WidgetComponent } from './widget/widget.component';
+import { TextModule } from './text/text.module';
 
 
 
@@ -35,6 +36,7 @@ import { WidgetComponent } from './widget/widget.component';
     TodoComponent,
     WidgetComponent,
     RouterOutlet,
+    TextModule,
     FormsModule
   ],
   providers: [],

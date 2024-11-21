@@ -1,18 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { UserFormComponent } from '../user-form/user-form.component';
 
 @Component({
   selector: 'app-weather',
   standalone: true,
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.css'],
-  imports: [CommonModule, FormsModule]
+  imports: [CommonModule, FormsModule, UserFormComponent]
 })
-export class WeatherComponent implements OnInit {
+export class WeatherComponent implements OnInit, OnChanges {
+  @Input() city: string = 'Ahmedabad'; // Accept city as an input
   weatherData: any;
-  city: string = 'Ahmedabad';
   isCityInputEmpty: boolean = false; // Track if city input is empty
   cityError: string = ''; // Error message for invalid city name
   apiKey: string = 'ebe4977f055defcccc75873566e531c1';
@@ -22,6 +23,12 @@ export class WeatherComponent implements OnInit {
 
   ngOnInit(): void {
     this.getWeatherData();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['city'] && !changes['city'].firstChange) {
+      this.getWeatherData(); // Fetch weather again when city input changes
+    }
   }
 
   getWeatherData() {
@@ -52,5 +59,3 @@ export class WeatherComponent implements OnInit {
     }
   }
 }
-
-
