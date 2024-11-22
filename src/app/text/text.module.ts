@@ -5,10 +5,9 @@ import { TestUserComponent } from './test-user/test-user.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ TestUserComponent ],
   imports: [
     CommonModule,
-    TestUserComponent
   ],
 })
 export class TextModule { }
