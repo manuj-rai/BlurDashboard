@@ -6,20 +6,25 @@ import { ChartComponent } from './chart/chart.component';
 import { MapComponent } from './map/map.component';
 import { ComponentsComponent } from './components/components.component';
 import { UserFormComponent } from './user-form/user-form.component';
+import { TestUserComponent } from './test/test-user/test-user.component';
+import { NewsComponent } from './news/news.component';
+import { TestModule } from './test/test.module';
+
+
 
 export const routes: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'components', component: ComponentsComponent },
     { path: 'charts', component: ChartComponent },
-    { path: 'features', component: ChartComponent },
-    { path: 'tables', component: MapComponent },
+    { path: 'news', component: NewsComponent },
+    { path: 'tables', component: ComponentsComponent },
     { path: 'maps', component: MapComponent },
-    { path: 'pages', component: MapComponent },
+    { path: 'pages', component: TestUserComponent },
     { path: 'menuLevel1', component: UserFormComponent },
 
 ];
 
 NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), TestModule],
   exports: [RouterModule]
 })

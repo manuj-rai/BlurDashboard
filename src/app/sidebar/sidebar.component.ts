@@ -39,8 +39,8 @@ export class SidebarComponent implements OnInit {
       this.router.navigate(['/components']);
     } else if (menu === 'charts') {
       this.router.navigate(['/charts']);
-    } else if (menu === 'features') {
-      this.router.navigate(['/features']);
+    } else if (menu === 'news') {
+      this.router.navigate(['/news']);
     } else if (menu === 'tables') {
       this.router.navigate(['/tables']);
     } else if (menu === 'maps') {

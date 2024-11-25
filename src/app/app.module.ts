@@ -1,8 +1,6 @@
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';  // Only import CommonModule
 import { AppComponent } from './app.component';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,18 +13,16 @@ import { FormsModule } from '@angular/forms';
 import { WeatherComponent } from './weather/weather.component';
 import { WidgetComponent } from './widget/widget.component';
 import { TestModule } from './test/test.module';
-
-
+import { DatePipe } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
-  declarations: [
-
-  ],
+  declarations: [NewsComponent],  // Declare your components here
   imports: [
     BrowserModule,
-    CommonModule,
-    HttpClientModule,
-    AppRoutingModule ,
+    CommonModule,  // This includes all the common Angular directives like NgIf
+    AppRoutingModule,
     WeatherComponent,
     DashboardComponent,
     AppComponent,
@@ -37,10 +33,12 @@ import { TestModule } from './test/test.module';
     WidgetComponent,
     RouterOutlet,
     TestModule,
-    FormsModule
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
-  bootstrap: []
+  providers: [DatePipe],  // Provide DatePipe if necessary
+  bootstrap: [],  // Bootstrap your root component
 })
-export class AppModule { }
+export class AppModule {}
+
 
