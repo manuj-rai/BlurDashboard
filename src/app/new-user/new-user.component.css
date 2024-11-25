@@ -3,13 +3,9 @@
     flex-direction: column;
     background-color: rgb(0 0 0 / 80%);
     padding: 10px;
-    margin-top: -300px;
-    /* position: fixed; */
     border-radius: 16px;
     font-size: 10px;
-    width: 97%;
-    margin-left: 10px;
-    /* height: 149px; */
+    width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
     border: 1px solid rgb(255 255 255 / 16%);
 }
@@ -22,10 +18,11 @@ h2 {
 
 .new-users .user-list{
     border-radius: 8px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 1.4rem;
+    gap: 1.rem;
     transition: all 0.3s ease;
 }
 

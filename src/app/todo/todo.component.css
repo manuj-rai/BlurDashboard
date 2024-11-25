@@ -1,26 +1,25 @@
 /* Todo Container */
 .todo-container {
-  width: 90%;
+  width: 100%;
   padding: 10px;
   background: rgb(0 0 0 / 80%);
   border-radius: 16px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
   border: 1px solid rgb(255 255 255 / 16%);
-  margin-top: 10px;
-  height: 310px;
+  height: 315px;
   overflow-y: scroll;
 }
 
 .todo-container h3 {
-  font-size: 1.5rem;
-  color: #fff;
-  margin-bottom: 20px;
-  
+  font: 400 1.112rem / 3.25rem Roboto, sans-serif;
+  letter-spacing: 0;
+  margin: -13px 0 -0.5em; 
 }
 
 /* Input field */
 .search-container{
     display: flex;
+    padding: 10px;
 }
 
 .search {
@@ -62,7 +61,7 @@
 /* Button */
 .todo-container button {
   width: 25%;
-  padding: 8px;
+  padding: 6px;
   font-size: 0.7rem;
   background-color: rgb(35 35 35 / 60%);
   border: 1px solid rgb(255 255 255 / 16%);
@@ -84,7 +83,7 @@
 /* Todo List Item Styling */
 .todo-container ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px;
   margin-top: 20px;
 }
 

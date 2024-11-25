@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ParticleBackgroundComponent } from './particle-background/particle-background.component';
 
 
 
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [RouterOutlet, 
     NavbarComponent,
     SidebarComponent,
-    FooterComponent
+    FooterComponent,
+    ParticleBackgroundComponent
     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
