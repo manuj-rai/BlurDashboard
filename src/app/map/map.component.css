@@ -1,6 +1,6 @@
 .mapbox {
   position: relative;
-  height: 95vh;
+  height: 800px;
   width: 100%;
   border: 1px solid var(--jet);
   overflow: hidden;
