@@ -10,4 +10,4 @@ import { TestUserComponent } from './test-user/test-user.component';
     CommonModule,
   ],
 })
-export class TextModule { }
+export class TestModule { }
