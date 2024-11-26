@@ -1,4 +1,4 @@
-<div class="news-container">
+<div #newsContainer class="news-container">
     <h2>Latest News</h2>
     
     <!-- Check if the newsList has items -->
@@ -18,5 +18,16 @@
     <ng-template #noNews>
       <p>No news available.</p>
     </ng-template>
+
+    <!-- Loading indicator -->
+  <div *ngIf="isLoading" class="loading-indicator">
+    <p>Loading more news...</p>
+  </div>
+
+   <!-- All news loaded message when no more data is available -->
+   <div *ngIf="!isLoading && newsList.length >= totalNewsCount" class="loading-indicator">
+    <p>All news loaded.</p>
+  </div>
 </div>
+
 

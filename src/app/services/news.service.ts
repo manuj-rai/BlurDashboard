@@ -13,7 +13,7 @@ export class NewsService {
     console.log(this.http);
    }
 
-  getActiveNews(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+  getActiveNews(pageIndex: number, pageSize: number): Observable<any> {
+    return this.http.get(`${this.apiUrl}?pageIndex=${pageIndex}&pageSize=${pageSize}`);
   }
 }
