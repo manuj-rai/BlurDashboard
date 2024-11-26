@@ -18,10 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsComponent } from './news/news.component';
 
 @NgModule({
-  declarations: [NewsComponent],  // Declare your components here
+  declarations: [NewsComponent], 
   imports: [
     BrowserModule,
-    CommonModule,  // This includes all the common Angular directives like NgIf
+    CommonModule,  
     AppRoutingModule,
     WeatherComponent,
     DashboardComponent,
@@ -36,8 +36,8 @@ import { NewsComponent } from './news/news.component';
     HttpClientModule,
     FormsModule,
   ],
-  providers: [DatePipe],  // Provide DatePipe if necessary
-  bootstrap: [],  // Bootstrap your root component
+  providers: [DatePipe],  
+  bootstrap: [],  
 })
 export class AppModule {}
 
