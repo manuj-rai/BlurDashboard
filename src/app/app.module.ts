@@ -18,7 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewsComponent } from './news/news.component';
 
 @NgModule({
-  declarations: [NewsComponent], 
+  declarations: [], 
   imports: [
     BrowserModule,
     CommonModule,  
@@ -34,6 +34,7 @@ import { NewsComponent } from './news/news.component';
     RouterOutlet,
     TestModule,
     HttpClientModule,
+    NewsComponent,
     FormsModule,
   ],
   providers: [DatePipe],  
