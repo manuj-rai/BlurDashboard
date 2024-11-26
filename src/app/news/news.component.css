@@ -29,6 +29,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     border: 1px solid rgb(255 255 255 / 16%);
+    cursor: pointer;
   }
   
   /* Hover effect for news items */
@@ -72,7 +73,8 @@
     }
   
     .news-item {
-      padding: 15px;
+      padding: 10px;
+      display: block;
     }
   
     .news-item h3 {

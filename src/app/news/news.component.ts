@@ -4,10 +4,6 @@ import { DatePipe } from '@angular/common';  // Import DatePipe
 import { NgModel } from '@angular/forms';
 import { CommonModule } from "@angular/common";
 
-
-
-
-
 @Component({
   selector: 'app-news',
   standalone:true,
