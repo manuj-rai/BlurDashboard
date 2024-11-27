@@ -21,12 +21,12 @@
 
     <!-- Loading indicator -->
   <div *ngIf="isLoading" class="loading-indicator">
-    <p>Loading more news...</p>
+    <p>loading more news...</p>
   </div>
 
    <!-- All news loaded message when no more data is available -->
    <div *ngIf="!isLoading && newsList.length >= totalNewsCount" class="loading-indicator">
-    <p>All news loaded.</p>
+    <p>no more news.</p>
   </div>
 </div>
 
