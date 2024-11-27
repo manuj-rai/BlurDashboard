@@ -6,6 +6,13 @@
     width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
     border: 1px solid rgb(255 255 255 / 16%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+
+  .weather-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   .search-container{
@@ -15,12 +22,18 @@
   input {
     background-color: rgb(35 35 35 / 60%);
     border: 1px solid rgb(255 255 255 / 16%);
+    transition: border-color 0.3s ease-in-out;
     border-radius: 8px;
     color: #fff;
     padding: 8px;
     font-size: 16px;
     margin-right: 10px;
     width: 150px;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #007bff;
   }
   
   @keyframes glowPulse {
@@ -45,7 +58,7 @@
   }
 
   button {
-    padding: 10px 16px;
+    padding: 8px 16px;
     background-color: rgb(35 35 35 / 60%);
     border: 1px solid rgb(255 255 255 / 16%);
     border-radius: 8px;

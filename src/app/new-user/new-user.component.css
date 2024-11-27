@@ -8,6 +8,13 @@
     width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
     border: 1px solid rgb(255 255 255 / 16%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.new-users:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
